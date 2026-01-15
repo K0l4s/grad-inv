@@ -20,9 +20,9 @@ const GraduationCard = ({ onClose, isPreview = false }: GraduationCardProps) => 
     const graduateInfo = {
         name: "Trung Kiên",
         major: "Công Nghệ Thông Tin",
-        school: "Trường ĐH Công Nghệ Kỹ Thuật TP.HCM", // Rút gọn tên trường chút
+        school: "Trường ĐH Công Nghệ Kỹ Thuật TP.HCM", 
         schoolShort: "HCMUTE",
-        address: "Số 1 Võ Văn Ngân, phường Linh Chiểu, Thủ Đức, TP.HCM",
+        address: "Số 1 Võ Văn Ngân, phường Thủ Đức, TP.HCM",
         dateFull: "Thứ Bảy, 24/01/2026",
         time: "10:30 Sáng",
         imageUrl: "/avt.jpg",
