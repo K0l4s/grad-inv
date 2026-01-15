@@ -150,7 +150,7 @@ const GraduationCard = ({ onClose }: { onClose: () => void }) => {
                         rotateZ={15}
                     >
                     <RevolvingTextRing
-                        text="HCM UNIVERSITY OF TECHNOLOGY AND ENGINEERING ★ INFORMATION TECHNOLOGY ★ "
+                        text="HCMC UNIVERSITY OF TECHNOLOGY AND ENGINEERING ★ INFORMATION TECHNOLOGY ★ "
                         radius={200}
                         rotateX={-10}
                         rotateZ={-15}
