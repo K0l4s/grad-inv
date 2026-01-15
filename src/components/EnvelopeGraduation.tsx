@@ -177,7 +177,7 @@ const EnvelopeGraduation = () => {
                 </div>
                 {/* LỚP 3: NỘI DUNG THƯ */}
                 <div className={`absolute inset-2 md:inset-4 bg-white rounded-sm shadow-md z-10 overflow-hidden transition-all duration-[1000ms] ease-in-out ${step >= 2 ? '-translate-y-[120%] rotate-2 shadow-2xl' : ''}`}>
-                     <div className="w-full h-full bg-orange-50/30"><GraduationCard onClose={reset} /></div>
+                     <div className="w-full h-full bg-orange-50/30"><GraduationCard onClose={reset} isPreview={true}/></div>
                 </div>
                 {/* LỚP 4: NẮP DƯỚI */}
                 <div className="absolute inset-0 z-20 pointer-events-none drop-shadow-2xl">
