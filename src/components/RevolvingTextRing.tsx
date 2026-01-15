@@ -11,8 +11,8 @@ interface RevolvingTextRingProps {
 const RevolvingTextRing: React.FC<RevolvingTextRingProps> = ({
     children,
     text = "HCM UNIVERSITY OF TECHNOLOGY AND ENGINEERING ★ ",
-    radius = 170, // Bán kính lớn
-    fontSize = "1.8rem", // Chữ to
+    radius = 170, 
+    fontSize = "1.8rem", 
     duration = 20,
 }) => {
     const chars = text.split("");
@@ -25,13 +25,10 @@ const RevolvingTextRing: React.FC<RevolvingTextRingProps> = ({
             const progress = i / chars.length;
             const hue = startHue + (progress * (endHue - startHue));
             
-            // Màu nền chữ (Fill): Để hơi trong suốt (opacity 0.5) để viền nổi bật hơn
             const fillColor = `hsla(${hue}, 100%, 50%, 0.5)`;
             
-            // Màu viền (Stroke): Lấy màu rất sáng (Lightness 90%) để tạo độ sắc nét
             const strokeColor = `hsla(${hue}, 100%, 90%, 1)`;
 
-            // Glow: Hiệu ứng phát sáng phía sau
             const glow = `0 0 15px hsla(${hue}, 100%, 60%, 0.6)`;
 
             return (
@@ -40,11 +37,7 @@ const RevolvingTextRing: React.FC<RevolvingTextRingProps> = ({
                     className="absolute top-1/2 left-1/2 font-black uppercase select-none"
                     style={{
                         fontSize: fontSize,
-                        color: fillColor, // Màu bên trong chữ
-                        
-                        // --- PHẦN THÊM VIỀN CHỮ ---
-                        // Độ dày viền: 1.5px (bạn có thể chỉnh lên 2px hoặc 3px nếu muốn dày hơn)
-                        // Màu viền: strokeColor
+                        color: fillColor, 
                         WebkitTextStroke: `1.5px ${strokeColor}`,
                         
                         textShadow: glow,
