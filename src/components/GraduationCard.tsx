@@ -16,7 +16,7 @@ const GraduationCard = ({ onClose }: { onClose: () => void }) => {
         major: "Công Nghệ Thông Tin",
         school: "Trường Đại Học Công Nghệ Kỹ Thuật TP.HCM",
         address: "Số 1 Võ Văn Ngân, phường Linh Chiểu, Thủ Đức, TP.HCM",
-        date: "Sáng Thứ Bảy, 24/11/2026",
+        date: "Sáng Thứ Bảy, 24/01/2026",
         time: "10:30",
         imageUrl: "/avt.jpg",
         googleMapsUrl: "https://maps.app.goo.gl/q6EetTRwwrdY9ndSA",
