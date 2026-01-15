@@ -187,7 +187,7 @@ const GraduationCard = ({ onClose, isPreview = false }: GraduationCardProps) => 
                     <div className={`relative z-30 transition-transform duration-500
                         ${isPreview ? 'scale-[0.55]' : 'scale-90 md:scale-100'}`}>
                         <RevolvingTextRing
-                            text={`★ ${graduateInfo.name.toUpperCase()} ★ GRADUATION 2026 ★ ${graduateInfo.schoolShort} ★ HCMUTE ★ IT ENGINEER `}
+                            text={`★ ${graduateInfo.name.toUpperCase()} ★ GRADUATION 2026 ★ ${graduateInfo.schoolShort} ★ IT ENGINEER `}
                             radius={180}
 
                         >
