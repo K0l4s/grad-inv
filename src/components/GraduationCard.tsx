@@ -6,6 +6,7 @@ import {
     SiTypescript
 } from 'react-icons/si';
 import { TbBrandCSharp } from 'react-icons/tb';
+import RevolvingTextRing from './RevolvingTextRing';
 
 const GraduationCard = ({ onClose }: { onClose: () => void }) => {
     const name = new URLSearchParams(window.location.search).get('name') || 'Bạn';
@@ -142,8 +143,19 @@ const GraduationCard = ({ onClose }: { onClose: () => void }) => {
                 {/* --- CỘT PHẢI: ẢNH & DECORATION --- */}
                 <div className="relative z-10 lg:w-1/2 bg-gradient-to-br from-blue-600 via-indigo-700 to-purple-800 p-[1.5rem] flex flex-col items-center justify-center min-h-[20rem] lg:min-h-full">
                     <div className="absolute inset-0 opacity-10" style={{ backgroundImage: `url("data:image/svg+xml,%3Csvg width='100' height='100' viewBox='0 0 100 100' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath d='M11 18c3.866 0 7-3.134 7-7s-3.134-7-7-7-7 3.134-7 7 3.134 7 7 7zm48 25c3.866 0 7-3.134 7-7s-3.134-7-7-7-7 3.134-7 7 3.134 7 7 7zm-43-7c1.657 0 3-1.343 3-3s-1.343-3-3-3-3 1.343-3 3 1.343 3 3 3z' fill='%23ffffff' fill-opacity='1' fill-rule='evenodd'/%3E%3C/svg%3E")`, backgroundSize: "12rem" }}></div>
-
-                    <div className="relative group w-[clamp(10rem,30vw,14rem)] aspect-[3/4]">
+                     <RevolvingTextRing
+                        text="HUỲNH TRUNG KIÊN ★ CONGRATULATIONS ON YOUR GRADUATION ★ 2026 ★ "
+                        radius={200}
+                        rotateX={10}
+                        rotateZ={15}
+                    >
+                    <RevolvingTextRing
+                        text="HCM UNIVERSITY OF TECHNOLOGY AND ENGINEERING ★ INFORMATION TECHNOLOGY ★ "
+                        radius={200}
+                        rotateX={-10}
+                        rotateZ={-15}
+                    >
+                        <div className="relative group w-[clamp(10rem,30vw,14rem)] aspect-[3/4]">
                         <div className="absolute -inset-[1rem] bg-gradient-to-t from-purple-500/30 to-blue-400/30 rounded-full blur-[2rem] animate-pulse-slow"></div>
                         <div className="w-full h-full rounded-[1rem] overflow-hidden border-[0.25rem] border-white/90 shadow-2xl relative z-10">
                             <img src={graduateInfo.imageUrl} alt="Avatar" className="w-full h-full object-cover" />
@@ -160,7 +172,9 @@ const GraduationCard = ({ onClose }: { onClose: () => void }) => {
                             <img src={graduateInfo.logoUrl} alt="School Logo" className="w-full h-full object-contain" />
                         </div>
                     </div>
-
+                    
+                    </RevolvingTextRing>
+                    </RevolvingTextRing>
                     {/* Marquee Icons */}
                     <div className="mt-[2rem] w-full overflow-hidden mask-image-linear-gradient-to-r">
                         <div className="flex animate-marquee gap-[1rem] items-center whitespace-nowrap">
