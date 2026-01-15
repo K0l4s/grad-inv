@@ -88,7 +88,7 @@ const GraduationCard = ({ onClose }: { onClose: () => void }) => {
                 {/* --- CỘT TRÁI: THÔNG TIN --- */}
                 <div className="relative z-10 p-[1.5rem] md:p-[2.5rem] flex flex-col justify-center space-y-[1.5rem] lg:w-1/2">
                     <div className="text-center lg:text-left">
-                        <h1 className="text-[1.25rem] md:text-[1.75rem] font-extrabold text-transparent bg-clip-text bg-gradient-to-r from-blue-700 via-indigo-600 to-purple-600 mb-[0.5rem]">
+                        <h1 className="text-[1.25rem] md:text-[1.5rem] font-extrabold text-transparent bg-clip-text bg-gradient-to-r from-blue-700 via-indigo-600 to-purple-600 mb-[0.5rem]">
                             LỄ TỐT NGHIỆP CỦA {graduateInfo.name.toUpperCase()}
                         </h1>
                         <div className="w-[4rem] h-[0.25rem] bg-gradient-to-r from-blue-600 to-purple-600 mx-auto lg:mx-0 rounded-full"></div>
