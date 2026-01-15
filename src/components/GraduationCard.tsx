@@ -13,12 +13,13 @@ const GraduationCard = ({ onClose }: { onClose: () => void }) => {
     const graduateInfo = {
         name: "Trung Kiên",
         major: "Công Nghệ Thông Tin",
-        school: "Trường Công Nghệ Kỹ Thuật TP.HCM",
+        school: "Trường Đại Học Công Nghệ Kỹ Thuật TP.HCM",
         address: "Số 1 Võ Văn Ngân, phường Linh Chiểu, Thủ Đức, TP.HCM",
         date: "Sáng Thứ Bảy, 24/11/2026",
         time: "10:30",
         imageUrl: "/avt.jpg",
-        googleMapsUrl: "#"
+        googleMapsUrl: "https://maps.app.goo.gl/q6EetTRwwrdY9ndSA",
+        logoUrl: "/school-logo.png",
     };
 
     const techStack = [
@@ -86,8 +87,8 @@ const GraduationCard = ({ onClose }: { onClose: () => void }) => {
                 {/* --- CỘT TRÁI: THÔNG TIN --- */}
                 <div className="relative z-10 p-[1.5rem] md:p-[2.5rem] flex flex-col justify-center space-y-[1.5rem] lg:w-1/2">
                     <div className="text-center lg:text-left">
-                        <h1 className="text-[1.5rem] md:text-[2rem] font-extrabold text-transparent bg-clip-text bg-gradient-to-r from-blue-700 via-indigo-600 to-purple-600 mb-[0.5rem]">
-                            LỄ TỐT NGHIỆP {graduateInfo.name.toUpperCase()}
+                        <h1 className="text-[1.25rem] md:text-[1.75rem] font-extrabold text-transparent bg-clip-text bg-gradient-to-r from-blue-700 via-indigo-600 to-purple-600 mb-[0.5rem]">
+                            LỄ TỐT NGHIỆP CỦA {graduateInfo.name.toUpperCase()}
                         </h1>
                         <div className="w-[4rem] h-[0.25rem] bg-gradient-to-r from-blue-600 to-purple-600 mx-auto lg:mx-0 rounded-full"></div>
                     </div>
@@ -105,10 +106,13 @@ const GraduationCard = ({ onClose }: { onClose: () => void }) => {
                         <div className="space-y-[0.75rem] p-[1rem] bg-white/60 rounded-[0.75rem] shadow-sm border border-blue-50">
                             <div className="flex items-center gap-[0.75rem]">
                                 <div className="w-[2rem] h-[2rem] bg-blue-100 rounded-[0.5rem] flex items-center justify-center flex-shrink-0">
-                                    <div className="w-[1rem] h-[1rem] bg-gradient-to-br from-blue-500 to-indigo-600 rounded-[0.2rem]"></div>
+                                    {/* <div className="w-[1rem] h-[1rem] bg-gradient-to-br from-blue-500 to-indigo-600 rounded-[0.2rem]"></div> */}
+                                    <svg xmlns="http://www.w3.org/2000/svg" className="w-[1.2rem] h-[1.2rem] text-blue-600" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                                        <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M9.75 17L9 20l-1 1h8l-1-1-.75-3M3 13h18M5 17h14a2 2 0 002-2V5a2 2 0 00-2-2H5a2 2 0 00-2 2v10a2 2 0 002 2z" />
+                                    </svg>
                                 </div>
                                 <div>
-                                    <p className="text-[0.6rem] uppercase text-gray-500 font-bold tracking-wider">Chuyên ngành</p>
+                                    <p className="text-[0.6rem] uppercase text-gray-500 font-bold tracking-wider">Ngành</p>
                                     <p className="font-bold text-gray-800 text-[0.9rem]">{graduateInfo.major}</p>
                                 </div>
                             </div>
@@ -150,6 +154,10 @@ const GraduationCard = ({ onClose }: { onClose: () => void }) => {
                                 <div className="text-[0.6rem] font-black">GRAD</div>
                                 <div className="text-[0.9rem] font-black">2026</div>
                             </div>
+                        </div>
+                        {/* logo */}
+                        <div className="absolute -top-[1rem] -left-[1rem] flex items-center justify-center shadow-md z-20 -rotate-20 border-[0.15rem] border-white bg-white/90 rounded-full w-[3.5rem] h-[3.5rem] group-hover:-rotate-0 transition duration-500">
+                            <img src={graduateInfo.logoUrl} alt="School Logo" className="w-full h-full object-contain" />
                         </div>
                     </div>
 

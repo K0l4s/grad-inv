@@ -84,10 +84,11 @@ const [rotation, setRotation] = useState({ x: 0, y: 0 });
             >
                 {/* con dấu */}
                 <div className="fixed left-1/2 transform -translate-x-1/2 -translate-y-1/2 top-1/2 z-40">
-                        <div className={`w-[3rem] h-[3rem] md:w-[4rem] md:h-[4rem] bg-red-700 
-                            rounded-full border-[0.25rem] border-red-800 shadow-lg flex items-center justify-center 
-                            text-yellow-500 font-serif font-bold text-[1.2rem] md:text-[1.5rem] transition-opacity duration-300 ${step >= 1 ? 'opacity-0' : 'opacity-100'}`}>
-                            K
+                        <div className={`w-[3rem] h-[3rem] md:w-[4rem] md:h-[4rem] bg-white 
+                            rounded-full border-[0.25rem] border-blue-500 shadow-lg flex items-center justify-center 
+                            font-serif font-bold text-[1.2rem] md:text-[1.5rem] transition-opacity duration-300 ${step >= 1 ? 'opacity-0' : 'opacity-100'}`}>
+                            {/* image */}
+                            <img src="/school-logo.png" alt="Seal" className="w-[2rem] h-[2rem] md:w-[2.5rem] md:h-[2.5rem] object-contain" />
                         </div>
                     </div>
 
