@@ -25,6 +25,7 @@ const GraduationCard = ({ onClose, isPreview = false }: GraduationCardProps) => 
         address: "Số 1 Võ Văn Ngân, phường Thủ Đức, TP.HCM",
         dateFull: "Thứ Bảy, 24/01/2026",
         time: "10:30 Sáng",
+        contact: "082.762.6203 (Trung Kiên)",
         imageUrl: "/avt.jpg",
         googleMapsUrl: "https://maps.app.goo.gl/q6EetTRwwrdY9ndSA",
         logoUrl: "/school-logo.png",
@@ -155,6 +156,12 @@ const GraduationCard = ({ onClose, isPreview = false }: GraduationCardProps) => 
                                             <Clock size={isPreview ? 10 : 14} />
                                             <span className={isPreview ? 'text-[0.65rem]' : 'text-base'}>Có mặt: {graduateInfo.time}</span>
                                         </div>
+                                        {/* contact */}
+                                        {!isPreview && (<div className="flex items-center gap-1 text-indigo-200/80 mt-1">
+                                            <MapPin size={isPreview ? 10 : 14} />
+                                            <span className={isPreview ? 'text-[0.65rem]' : 'text-base'}>Liên hệ: {graduateInfo.contact}</span>
+                                        </div>
+                                        )}
                                     </div>
                                 </div>
                                 <div className="flex items-start gap-2">
